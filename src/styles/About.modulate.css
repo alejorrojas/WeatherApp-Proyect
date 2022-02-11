@@ -1,0 +1,37 @@
+.about-box{
+    width: 70%;
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: #a5a1a19f;
+    color: #ffffff;
+    box-shadow: 0 8px 10px #00000049;
+
+    font-size: 16px;
+
+    transition: 0.5s;
+}
+
+.about-box:hover{
+    box-shadow: 0 9px 3px #00000049;
+    width: 75%;
+}
+
+.about-img{
+    width: 100%;
+ 
+}
+
+
+.bottom{
+    padding: 1rem;
+    max-width: 700px;
+}
+
+

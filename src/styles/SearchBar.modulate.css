@@ -1,0 +1,36 @@
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input, .button{
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: none;
+    cursor: pointer;
+}
+
+.input::placeholder{
+    color: #ffffff;
+    text-transform: none;
+    
+}
+
+.input{
+    text-transform: uppercase;
+}
+
+.button{
+    font-size: 2rem;
+    max-height: fit-content;
+    border-radius: 9999px;
+    transition: 0.3s    ;
+    
+}
+
+.button:hover{
+
+    background-color: #ffffff5e;
+}

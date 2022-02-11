@@ -1,0 +1,33 @@
+/* .grid-cards{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 30%;
+  overflow: hidden;
+} */
+
+/* .cards-back{
+  display: flex;
+} */
+
+.cards-back{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.else-box{
+  width: fit-content;
+  background-color: #00000025;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  margin: 8rem auto;
+  cursor: pointer;
+}
+
+.else-box:hover{
+  background-color: #00000011;
+}
+
+.else-title{
+  color: #ffffff;
+}
