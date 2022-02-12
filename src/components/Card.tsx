@@ -34,9 +34,9 @@ export default function Card({ min, max, name, img, id }: PropsCard) {
         </button>
       </div>
       <div className="card-body">
-        <Link  to={`/ciudad/${id}`} style={{textDecoration: 'none', outline: 'none'}}>
+        {/* <Link  to={`/ciudad/${id}`} style={{textDecoration: 'none', outline: 'none'}}></Link> */}
           <h5 className="card-title">{name}</h5>
-        </Link>
+        
         <div className="row">
           <div className="col-sm-4 col-md-4 col-lg-4">
             <p>Min</p>

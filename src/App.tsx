@@ -8,17 +8,26 @@ import Ciudad from "./components/Ciudad";
 import About from "./components/About";
 import { useSelector } from "react-redux";
 
+const [allCover] = document.getElementsByTagName("body");
+const temp = 25;
 
-const [allCover] = document.getElementsByTagName('body');
-const temp = 25
+const setCover = (temp: number) => {
+  console.log(temp)
+  if (temp > 28) allCover.setAttribute("class", "hot");
+  else if (temp < 28 && temp > 10) allCover.setAttribute("class", "warm");
+  else if (temp < 10) allCover.setAttribute("class", "cold");
+
+};
 
 function App() {
-  const city = useSelector<PropsCities[], PropsCities[]>(state=>state)
+  const [city, ...rest] = useSelector<PropsCities[], PropsCities[]>(
+    (state) => state
+  );
 
   return (
     <div className="app-container">
-      {/* algo por aca va */}
-      {city.length ? city[0].main.temp_min > 20 ? allCover.setAttribute('class', 'hot') : allCover.setAttribute('class', 'cold') : allCover.setAttribute('class', 'default')}
+      {city ? setCover(city.main.temp_min): allCover.setAttribute("class", "default")}
+      {/* {city ? city.main.temp_min > 28 ? allCover.setAttribute('class', 'hot') : allCover.setAttribute('class', 'cold') : allCover.setAttribute('class', 'default')} */}
 
       <Route path="/" render={() => <NavBar />} />
       <Route
