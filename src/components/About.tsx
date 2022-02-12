@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../styles/About.modulate.css";
 
 export default function About() {

@@ -1,4 +1,4 @@
-import React from "react";
+
 import Card from "./Card";
 import "../styles/Cards.modulate.css";
 import { useSelector } from "react-redux";
@@ -48,7 +48,7 @@ export default function Cards() {
     return (
       <div className="else-box">
         {console.log(cities)}
-        <h1 className="else-title">Sin ciudades</h1>
+        <h1 className="else-title">Without cities</h1>
       </div>
     );
   }

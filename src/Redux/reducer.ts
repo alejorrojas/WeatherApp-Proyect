@@ -1,6 +1,6 @@
-import { Action, Reducer } from "redux";
+import {  Reducer } from "redux";
 import { DELETE_CITY, ERROR, GET_CITY } from "./action-names";
-import { action, ciudades } from "./Interfaces";
+import { ciudades } from "./Interfaces";
 import Swal from 'sweetalert2'
 
 const initialState: ciudades[] = [];
