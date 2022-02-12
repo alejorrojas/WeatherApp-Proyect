@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 
 const initialState: ciudades[] = [];
 
-const rootReducer: Reducer<ciudades[], Action<string>> = (
+const rootReducer: Reducer<ciudades[]> = (
   state = initialState,
   action
 ) => {
