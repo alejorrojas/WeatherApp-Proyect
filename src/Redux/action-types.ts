@@ -24,6 +24,6 @@ export const getCity = (ciudad: string) => {
   };
 };
 
-export const deleteCity = (id: string): Action => {
+export const deleteCity = (id: string)=> {
   return { type: DELETE_CITY, payload: id };
 };
