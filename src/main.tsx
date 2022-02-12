@@ -1,4 +1,4 @@
-import { store } from "./Redux/Store";
+import { store } from "c:/Users/Miguel/Desktop/pruebas/WeatherApp-Proyect/src/Redux/Store";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./main.css";
