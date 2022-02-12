@@ -1,8 +1,10 @@
 import React from "react";
 import Card from "./Card";
 import "../styles/Cards.modulate.css";
+import { useSelector } from "react-redux";
 
-interface PropsCities {
+export interface PropsCities {
+        id: string,
         name: string,
         main: {
             temp_min: number, 
@@ -10,7 +12,7 @@ interface PropsCities {
         },
         weather: [
             {
-                icon: number
+                icon: string
             }
         ]
 }
@@ -20,29 +22,32 @@ interface PropsCards {
 }
 
 export default function Cards() {
-//   const card = cities.map((c) => (
-//     <Card
-//       id={c.id}
-//       key={c.name}
-//       max={c.max}
-//       min={c.min}
-//       name={c.name}
-//       img={c.img}
-//       onClose={() => onClose(c.id)}
-//     />
-//   ));
+  const cities = useSelector<PropsCities[], PropsCities[]>(state=>state)
+  const card = cities.map((c: PropsCities) => (
+    <Card
+      id={c.id}
+      key={c.name}
+      max={c.main.temp_max}
+      min={c.main.temp_min}
+      name={c.name}
+      img={c.weather[0].icon}
+  
+    />
+  ));
 
-//   if (Array.isArray(cities) && cities.length) {
-//     return (
-//       <div className="grid-cards">
-//         {/* <div className="cards-main">{card[card.length-1]}</div> */}
-//         <div className="cards-back">{card}</div>
-//       </div>
-//     );
-//   } else {
+  if (Array.isArray(cities) && cities.length) {
+    return (
+      <div className="grid-cards">
+        {/* <div className="cards-main">{card[card.length-1]}</div> */}
+        <div className="cards-back">{card}</div>
+      </div>
+    );
+  } else {
     return (
       <div className="else-box">
+        {console.log(cities)}
         <h1 className="else-title">Sin ciudades</h1>
       </div>
     );
   }
+}

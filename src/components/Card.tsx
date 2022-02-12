@@ -1,27 +1,33 @@
 
-import React, {  MouseEventHandler } from "react";
+import {  MouseEventHandler } from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { deleteCity } from "../Redux/action-types";
 
-import "./styles/Card.modulate.css";
+import "../styles/Card.modulate.css";
 
-interface PropsCard {
+
+export interface PropsCard {
     name: string,
     min: number,
     max: number,
-    img: number,
-    id: number
+    img: string,
+    id: string
 
 }
 
 
 export default function Card({ min, max, name, img, id }: PropsCard) {
+  const dispatch = useDispatch()
 
   const handleClose: MouseEventHandler<HTMLButtonElement> = (event) => {
-      
+    dispatch(deleteCity(id))
+
   }
 
   return (
     <div className="card">
+        
       <div id="closeIcon" className="row">
         <button onClick={handleClose} className="btn btn-sm btn-danger close-btn">
           X
@@ -43,7 +49,7 @@ export default function Card({ min, max, name, img, id }: PropsCard) {
           <div className="col-sm-4 col-md-4 col-lg-4">
             <img
               className="iconoClima"
-              src={"http://openweathermap.org/img/wn/" + img + "@2x.png"}
+              src={`http://openweathermap.org/img/wn/${img}@2x.png`}
               width="80"
               height="80"
               alt=""

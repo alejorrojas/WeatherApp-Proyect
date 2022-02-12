@@ -1,16 +1,21 @@
-
 import { Action, Reducer } from "redux";
-import { GET_CITY } from "./action-types";
+import { DELETE_CITY, GET_CITY } from "./action-types";
 import { action, ciudades } from "./Interfaces";
 
 const initialState: ciudades[] = [];
 
- const rootReducer: Reducer<ciudades[], Action<string>> = (state = initialState, action) => {
-  switch (action.payload) {
-    case GET_CITY: return [...state, action.payload]
+const rootReducer: Reducer<ciudades[], Action<string>> = (
+  state = initialState,
+  action
+) => {
+  switch (action.type) {
+    case GET_CITY:
+      return [action.payload, ...state];
+    case DELETE_CITY: 
+      return state.filter(cities=> cities.id !== action.payload)
     default:
       return state;
   }
 };
 
-export default rootReducer
+export default rootReducer;
