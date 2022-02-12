@@ -1,4 +1,3 @@
-
 import "./App.css";
 import NavBar from "./components/NavBar";
 import { Route } from "react-router-dom";
@@ -8,14 +7,12 @@ import About from "./components/About";
 import { useSelector } from "react-redux";
 
 const [allCover] = document.getElementsByTagName("body");
-const temp = 25;
 
 const setCover = (temp: number) => {
-  console.log(temp)
+  console.log(temp);
   if (temp > 28) allCover.setAttribute("class", "hot");
   else if (temp < 28 && temp > 10) allCover.setAttribute("class", "warm");
   else if (temp < 10) allCover.setAttribute("class", "cold");
-
 };
 
 function App() {
@@ -25,20 +22,16 @@ function App() {
 
   return (
     <div className="app-container">
-      {city ? setCover(city.main.temp_min): allCover.setAttribute("class", "default")}
-      {/* {city ? city.main.temp_min > 28 ? allCover.setAttribute('class', 'hot') : allCover.setAttribute('class', 'cold') : allCover.setAttribute('class', 'default')} */}
+      {city
+        ? setCover(city.main.temp_min)
+        : allCover.setAttribute("class", "default")}
 
       <Route path="/" render={() => <NavBar />} />
-      <Route
-        exact={true}
-        path="/"
-        render={() => <Cards />}
-        // temp > 10 => style={{ backgound: url} } else
-      />
+      <Route exact={true} path="/" render={() => <Cards />} />
       <Route
         path="/ciudad/:ciudadId"
         exact={true}
-        render={({ match }) => <Ciudad />}
+        render={() => <Ciudad />}
       />
       <Route path="/about" exact={true} component={About} />
     </div>
