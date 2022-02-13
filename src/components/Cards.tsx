@@ -48,7 +48,7 @@ export default function Cards() {
     return (
       <div className="else-box">
         {console.log(cities)}
-        <h1 className="else-title">Without cities</h1>
+        <h1 className="else-title">Add new cities</h1>
       </div>
     );
   }
