@@ -38,12 +38,12 @@ export default function Cards() {
     if (cities.length > 6) {
       cities.pop();
     }
-    return (
-      <div className="grid-cards">
+    
+    return (<div className="cards-back">{card}</div> ) 
+    
         {/* <div className="cards-main">{card[card.length-1]}</div> */}
-        <div className="cards-back">{card}</div>
-      </div>
-    );
+  
+    
   } else {
     return (
       <div className="else-box">
