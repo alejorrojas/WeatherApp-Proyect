@@ -12,7 +12,7 @@ export default function About() {
       <div className="bottom">
         <h2 className="about-title">About me</h2>
         <hr />
-        <h4>Hi! My name is Alejo and I'm a Frontend Developer</h4>
+        <h4>Hi! My name is Alejo and I'm a FullStack Developer</h4>
         <span>
           Coding is the most powerful tool that I have for creating and
           materialising my ideas. 💡 
