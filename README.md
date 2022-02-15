@@ -1,8 +1,8 @@
-<img src=''/>
+<img src='src\assets\Header.png'/>
 
 # WeatherApp
-<hr>
-This is a personal WeatherApp proyect. Build with React, Redux, TypeScript, HTML and CSS
+
+<h1>This is a personal WeatherApp proyect. Build with React, Redux, TypeScript, HTML and CSS<h1/>
 
 ## Deployment
 
@@ -31,8 +31,8 @@ npm run dev
 
 ## Final View
 
-<img src='#' />
-<img src='#' />
-<img src='#' />
-<img src='#' />
+<img src='src\assets\finalView1.png' />
+<img src='src\assets\finalView2.png' />
+<img src='src\assets\finalView3.png' />
+<img src='src\assets\finalView4.png' />
 
