@@ -29,7 +29,7 @@ export default function Card({ min, max, name, img, id }: PropsCard) {
     <div className="card">
         
       <div id="closeIcon" className="row">
-        <button onClick={handleClose} className="btn btn-sm btn-danger close-btn">
+        <button onClick={handleClose} className="close-btn">
           X
         </button>
       </div>
