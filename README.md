@@ -2,7 +2,8 @@
 
 
 <h1>WeatherApp<h1/>
-This is a personal WeatherApp proyect. Build with React, Redux, TypeScript, HTML and CSS
+
+Personal WeatherApp proyect. Build with React, Redux, TypeScript, HTML and CSS
 
 ## Deployment
 
