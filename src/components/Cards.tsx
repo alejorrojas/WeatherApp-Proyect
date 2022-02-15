@@ -2,7 +2,6 @@ import Card from "./Card";
 import "../styles/Cards.modulate.css";
 import { useSelector } from "react-redux";
 import Swal from "sweetalert2";
-import { useEffect } from "react";
 
 export interface PropsCities {
   id: string;
@@ -34,6 +33,17 @@ export default function Cards() {
       img={c.weather[0].icon}
     />
   ));
+
+  if(screen.width < 1000) {
+    Swal.fire({
+      title: 'Oops...',
+      html: 'We are still working in our mobile set up',
+      icon: 'info',
+      allowOutsideClick: false,
+      allowEnterKey: false,
+      showConfirmButton: false
+    })
+  }
   
 
   if (Array.isArray(cities) && cities.length) {
