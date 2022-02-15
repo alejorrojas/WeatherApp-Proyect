@@ -9,14 +9,14 @@
   display: flex;
 } */
 
-.cards-back {
-  height: 90%;
+.cards-back{
+  height:  90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.else-box {
+.else-box{
   width: fit-content;
   background-color: #00000025;
   padding: 1rem;
@@ -25,20 +25,14 @@
   cursor: pointer;
 }
 
-.else-box:hover {
+.else-box:hover{
   background-color: #00000011;
 }
 
-.else-title {
+.else-title{
   color: #ffffff;
 }
 
-@media only screen and (max-width: 600px) {
-  cards-back {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+@media only screen and (max-width: 575px){
+    
 }

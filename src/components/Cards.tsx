@@ -45,16 +45,6 @@ export default function Cards() {
     })
   }
   
-  if(screen.width < 1000) {
-    Swal.fire({
-      title: 'Oops...',
-      html: 'We are still working in our mobile set up',
-      icon: 'info',
-      allowOutsideClick: false,
-      allowEnterKey: false,
-      showConfirmButton: false
-    })
-  }
 
   if (Array.isArray(cities) && cities.length) {
     if (cities.length > 6) {
