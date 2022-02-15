@@ -1,7 +1,8 @@
-
 import Card from "./Card";
 import "../styles/Cards.modulate.css";
 import { useSelector } from "react-redux";
+import Swal from "sweetalert2";
+import { useEffect } from "react";
 
 export interface PropsCities {
   id: string;
@@ -33,21 +34,16 @@ export default function Cards() {
       img={c.weather[0].icon}
     />
   ));
+  
 
   if (Array.isArray(cities) && cities.length) {
     if (cities.length > 6) {
       cities.pop();
     }
-    
-    return (<div className="cards-back">{card}</div> ) 
-    
-        {/* <div className="cards-main">{card[card.length-1]}</div> */}
-  
-    
+    return <div className="cards-back">{card}</div>;
   } else {
     return (
       <div className="else-box">
-        {console.log(cities)}
         <h1 className="else-title">Add new cities</h1>
       </div>
     );

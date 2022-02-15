@@ -1,9 +1,4 @@
-import {
-  ChangeEvent,
-  FormEvent,
-  useRef,
-  useState,
-} from "react";
+import { ChangeEvent, FormEvent, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getCity } from "../Redux/action-types";
 import "../styles/SearchBar.modulate.css";
@@ -21,17 +16,10 @@ export default function SearchBar() {
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    console.log(`estoy haciendo submit con esto${state}`);
+   
     e.preventDefault();
-    // const repeatedCity = cities.find((c) => c.name.toLocaleUpperCase === state.toLocaleUpperCase)
-    // console.log(repeatedCity)
-    // if (repeatedCity) {
-      
-    //   alert("Ciudad ya agregada");
-    // } else {
-      // }
-      
-       dispatch(getCity(state));
+
+    dispatch(getCity(state));
     setState("");
     inputCity.current?.focus();
   };

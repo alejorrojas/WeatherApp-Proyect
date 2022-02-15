@@ -32,3 +32,7 @@
 .else-title{
   color: #ffffff;
 }
+
+@media only screen and (max-width: 575px){
+    
+}

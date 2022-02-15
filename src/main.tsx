@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import rootReducer from "./Redux/reducer";
 
-/* prueba para Vercel */
+/* Store definida en main para evitar errores de Vercel */
 
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
