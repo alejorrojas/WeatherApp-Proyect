@@ -16,18 +16,18 @@
   justify-content: center;
 }
 .warm {
-  background-image: url("https://i.imgur.com/OGMtBBR.jpeg");
+  background-image: url("./assets/warm.jpeg");
 }
 
 .default {
-  background-image: url("https://design4users.com/wp-content/uploads/2020/10/autumn-cover-illustration-743x1024.jpg.pagespeed.ce.5yA-ewj1-B.jpg");
+  background-image: url("./assets/default.jpg");
 }
 .cold {
   
-  background-image: url("https://cdn.pixabay.com/photo/2021/11/09/15/32/christmas-6781762_960_720.jpg");
+  background-image: url("./assets/cold.jpg");
 }
 
 .hot {
  
-  background-image: url("https://design4users.com/wp-content/uploads/2019/10/autumn-illustration-design.jpg.pagespeed.ce.IebPe3LFw1.jpg");
+  background-image: url("./assets/hot.jpg");
 }
