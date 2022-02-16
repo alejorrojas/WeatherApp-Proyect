@@ -6,7 +6,7 @@ export default function About() {
     <div className="about-box">
       <div className="top">
         <a href="https://www.linkedin.com/in/alejorrojas/">
-          <img className="about-img" src="src\assets\IMG.jpg" alt="" />
+          <img className="about-img" src="https://media-exp1.licdn.com/dms/image/C4D03AQFnvTWoJ0THLQ/profile-displayphoto-shrink_200_200/0/1623807836152?e=1650499200&v=beta&t=uHejJpbyi2iacvDiWEvGse-CksQik1yrxUBpf63sBOQ" alt="profile picture" />
         </a>
       </div>
       <div className="bottom">
