@@ -6,7 +6,7 @@ export default function About() {
     <div className="about-box">
       <div className="top">
         <a href="https://www.linkedin.com/in/alejorrojas/">
-          <img className="about-img" src="https://vercel.com/api/www/avatar/23455177a24a8f704443a8dc21df2c3a1da5c55a?s=160" alt="" />
+          <img className="about-img" src="src\assets\IMG.jpg" alt="" />
         </a>
       </div>
       <div className="bottom">
