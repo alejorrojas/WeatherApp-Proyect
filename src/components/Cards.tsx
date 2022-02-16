@@ -37,7 +37,7 @@ export default function Cards() {
   if(screen.width < 1000) {
     Swal.fire({
       title: 'Oops...',
-      html: 'We are still working in our mobile set up',
+      html: 'We are still working in our mobile set up. Try me on your computer instead!',
       icon: 'info',
       allowOutsideClick: false,
       allowEnterKey: false,
